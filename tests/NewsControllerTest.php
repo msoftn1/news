@@ -35,7 +35,7 @@ class NewsControllerTest extends TestCase
     public function testView()
     {
         $this->get(sprintf('/view/%s', 163));
-        $this->assertEquals(200, $this->response->status());
+        $this->assertTrue(in_array($this->response->status(), [200,302]));
     }
 
     public function testDate()

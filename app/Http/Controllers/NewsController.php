@@ -113,9 +113,9 @@ class NewsController extends Controller
      * Источник по идентификатору.
      *
      * @param string $id
-     * @return View
+     * @return mixed
      */
-    public function sourceById(string $id): View
+    public function sourceById(string $id)
     {
         $source = $this->sourceRepository->findByIdentifier($id);
 
@@ -189,10 +189,10 @@ class NewsController extends Controller
     /**
      * Страница новости.
      *
-     * @param int $id
-     * @return View
+     * @param string $id
+     * @return mixed
      */
-    public function view(int $id): View
+    public function view(string $id)
     {
         $newsItem = $this->newsRepository->find($id);
 
@@ -219,9 +219,9 @@ class NewsController extends Controller
      *
      * @param string $dateStart
      * @param string $dateEnd
-     * @return View
+     * @return mixed
      */
-    public function date(string $dateStart, string $dateEnd): View
+    public function date(string $dateStart, string $dateEnd)
     {
         try {
             $date = (new \DateTime($dateStart))->format('F Y');
@@ -310,9 +310,9 @@ class NewsController extends Controller
      * Поиск.
      *
      * @param Request $request
-     * @return View
+     * @return mixed
      */
-    public function search(Request $request): View
+    public function search(Request $request)
     {
         $search = $request->get('search');
         $searchDecode = urldecode($search);
