@@ -18,7 +18,7 @@ class CreateNews extends Migration
             $table->id();
             $table->unsignedBigInteger('source_id')->nullable(false);
             $table->string('author')->nullable(true)->index();
-            $table->text('title')->nullable(false)->index();
+            $table->string('title', 1000)->nullable(false)->index();
             $table->text('description')->nullable(true);
             $table->text('url')->nullable(true);
             $table->text('url_to_image')->nullable(true);
