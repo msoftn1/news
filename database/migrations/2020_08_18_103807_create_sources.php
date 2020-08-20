@@ -15,7 +15,7 @@ class CreateSources extends Migration
     {
         Schema::create('sources', function (Blueprint $table) {
             $table->id();
-            $table->string('identifier')->nullable(false);
+            $table->string('identifier')->nullable(false)->unique();
             $table->string('name')->nullable(false);
             $table->text('description')->nullable(true);
             $table->string('url')->nullable(true);
