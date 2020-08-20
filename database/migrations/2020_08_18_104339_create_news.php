@@ -24,7 +24,7 @@ class CreateNews extends Migration
             $table->text('url_to_image')->nullable(true);
             $table->text('image')->nullable(true);
             $table->dateTimeTz('published_at')->nullable(false)->index();
-            $table->text('content')->nullable(true)->index();
+            $table->text('content')->nullable(true);
 
             $table->timestamps();
 
