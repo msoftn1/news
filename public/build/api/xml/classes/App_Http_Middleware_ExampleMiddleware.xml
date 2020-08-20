@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Http\Middleware\ExampleMiddleware" namespace="App\Http\Middleware" name="ExampleMiddleware" abstract="false" final="false" start="7" end="20">
+  <file path="/home/tatu/news/app/Http/Middleware" file="ExampleMiddleware.php" realpath="/home/tatu/news/app/Http/Middleware/ExampleMiddleware.php" size="333" time="2020-08-20T06:48:49+00:00" unixtime="1597906129" sha1="d481b2f3187faf2e67935ce041897a71f80796d3" relative="Http/Middleware/ExampleMiddleware.php"/>
+  <method name="handle" start="16" end="19" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Handle an incoming request."/>
+      <param type="object" variable="$request">
+        <type full="\Illuminate\Http\Request" namespace="\Illuminate\Http" name="Request"/>
+      </param>
+      <param type="object" variable="$next">
+        <type full="\Closure" namespace="" name="Closure"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <parameter name="next" byreference="false" type="object">
+      <type full="Closure" namespace="" name="Closure"/>
+    </parameter>
+  </method>
+</class>

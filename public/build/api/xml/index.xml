@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index xmlns="http://xml.phpdox.net/src" basedir="/home/tatu/news/app">
+  <namespace name="App">
+    <class name="Source" src="Source.php" description="Источники." xml="classes/App_Source.xml"/>
+    <class name="News" src="News.php" description="Новости." xml="classes/App_News.xml"/>
+    <class name="User" src="User.php" description="Пользователи." xml="classes/App_User.xml"/>
+  </namespace>
+  <namespace name="App\Console\Commands">
+    <class name="NewsLoadCommand" src="Console/Commands/NewsLoadCommand.php" description="Команда загружает новости." xml="classes/App_Console_Commands_NewsLoadCommand.xml"/>
+    <class name="NewsLoadSourcesCommand" src="Console/Commands/NewsLoadSourcesCommand.php" description="Команда загружает источники новостей." xml="classes/App_Console_Commands_NewsLoadSourcesCommand.xml"/>
+    <class name="CreateUser" src="Console/Commands/CreateUser.php" description="Команда создает пользователя." xml="classes/App_Console_Commands_CreateUser.xml"/>
+  </namespace>
+  <namespace name="App\Console">
+    <class name="Kernel" src="Console/Kernel.php" xml="classes/App_Console_Kernel.xml"/>
+  </namespace>
+  <namespace name="App\Breadcrumbs\DTO">
+    <class name="Breadcrumb" src="Breadcrumbs/DTO/Breadcrumb.php" description="Элемент breadcrumbs." xml="classes/App_Breadcrumbs_DTO_Breadcrumb.xml"/>
+  </namespace>
+  <namespace name="App\Breadcrumbs">
+    <class name="BreadcrumbsBuilder" src="Breadcrumbs/BreadcrumbsBuilder.php" description="Строитель breadcrumbs." xml="classes/App_Breadcrumbs_BreadcrumbsBuilder.xml"/>
+  </namespace>
+  <namespace name="App\View\Components">
+    <class name="Categories" src="View/Components/Categories.php" description="Компонент категорий." xml="classes/App_View_Components_Categories.xml"/>
+    <class name="Languages" src="View/Components/Languages.php" description="Компонент языков." xml="classes/App_View_Components_Languages.xml"/>
+    <class name="NewsArchive" src="View/Components/NewsArchive.php" description="Компонент архивов новостей." xml="classes/App_View_Components_NewsArchive.xml"/>
+    <class name="Sources" src="View/Components/Sources.php" description="Компонент источников." xml="classes/App_View_Components_Sources.xml"/>
+  </namespace>
+  <namespace name="App\Events">
+    <class name="Event" src="Events/Event.php" xml="classes/App_Events_Event.xml"/>
+  </namespace>
+  <namespace name="App\Repository">
+    <class name="SourceRepository" src="Repository/SourceRepository.php" description="Репозиторий источников." xml="classes/App_Repository_SourceRepository.xml"/>
+    <class name="NewsRepository" src="Repository/NewsRepository.php" description="Репозиторий новостей." xml="classes/App_Repository_NewsRepository.xml"/>
+    <interface name="EloquentRepositoryInterface" src="Repository/EloquentRepositoryInterface.php" description="Интерфейс репозиториев." xml="interfaces/App_Repository_EloquentRepositoryInterface.xml"/>
+    <class name="BaseRepository" src="Repository/BaseRepository.php" description="Базовый класс репозитория." xml="classes/App_Repository_BaseRepository.xml"/>
+    <class name="UserRepository" src="Repository/UserRepository.php" description="Репозитории пользователей." xml="classes/App_Repository_UserRepository.xml"/>
+  </namespace>
+  <namespace name="App\Jobs">
+    <class name="Job" src="Jobs/Job.php" xml="classes/App_Jobs_Job.xml"/>
+  </namespace>
+  <namespace name="App\Services">
+    <class name="BreadcrumbsService" src="Services/BreadcrumbsService.php" description="Сервис хлебных крошек." xml="classes/App_Services_BreadcrumbsService.xml"/>
+    <class name="ImportNewsService" src="Services/ImportNewsService.php" description="Сервис импорта новостей." xml="classes/App_Services_ImportNewsService.xml"/>
+    <class name="ResizeService" src="Services/ResizeService.php" description="Сервис ресайза." xml="classes/App_Services_ResizeService.xml"/>
+  </namespace>
+  <namespace name="App\Exceptions">
+    <class name="Handler" src="Exceptions/Handler.php" xml="classes/App_Exceptions_Handler.xml"/>
+  </namespace>
+  <namespace name="App\Http\Controllers">
+    <class name="ApiController" src="Http/Controllers/ApiController.php" description="Контроллер API." xml="classes/App_Http_Controllers_ApiController.xml"/>
+    <class name="NewsController" src="Http/Controllers/NewsController.php" description="Контроллер новостей." xml="classes/App_Http_Controllers_NewsController.xml"/>
+    <class name="Controller" src="Http/Controllers/Controller.php" description="Базовый контроллер." xml="classes/App_Http_Controllers_Controller.xml"/>
+  </namespace>
+  <namespace name="App\Http\Middleware">
+    <class name="ExampleMiddleware" src="Http/Middleware/ExampleMiddleware.php" xml="classes/App_Http_Middleware_ExampleMiddleware.xml"/>
+    <class name="Authenticate" src="Http/Middleware/Authenticate.php" xml="classes/App_Http_Middleware_Authenticate.xml"/>
+  </namespace>
+  <namespace name="App\Libraries\NewsApi">
+    <class name="Client" src="Libraries/NewsApi/Client.php" description="Клиент новостей." xml="classes/App_Libraries_NewsApi_Client.xml"/>
+  </namespace>
+  <namespace name="App\Libraries\NewsApi\Exceptions">
+    <class name="NewsApiException" src="Libraries/NewsApi/Exceptions/NewsApiException.php" description="Исключение возникающее при загрузке новостей." xml="classes/App_Libraries_NewsApi_Exceptions_NewsApiException.xml"/>
+  </namespace>
+  <namespace name="App\Providers">
+    <class name="AppServiceProvider" src="Providers/AppServiceProvider.php" xml="classes/App_Providers_AppServiceProvider.xml"/>
+    <class name="EventServiceProvider" src="Providers/EventServiceProvider.php" xml="classes/App_Providers_EventServiceProvider.xml"/>
+    <class name="AuthServiceProvider" src="Providers/AuthServiceProvider.php" xml="classes/App_Providers_AuthServiceProvider.xml"/>
+  </namespace>
+  <namespace name="App\Logger">
+    <class name="BaseLogger" src="Logger/BaseLogger.php" description="Базовый класс логгера." xml="classes/App_Logger_BaseLogger.xml"/>
+  </namespace>
+  <namespace name="">
+    <class name="Exception" xml="classes/Exception.xml"/>
+  </namespace>
+</index>

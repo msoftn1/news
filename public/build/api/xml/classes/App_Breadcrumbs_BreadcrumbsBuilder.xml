@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Breadcrumbs\BreadcrumbsBuilder" namespace="App\Breadcrumbs" name="BreadcrumbsBuilder" abstract="false" final="false" start="14" end="172">
+  <file path="/home/tatu/news/app/Breadcrumbs" file="BreadcrumbsBuilder.php" realpath="/home/tatu/news/app/Breadcrumbs/BreadcrumbsBuilder.php" size="3317" time="2020-08-20T06:46:33+00:00" unixtime="1597905993" sha1="938ed75f68265fc3f9376634fa26402700c7136a" relative="Breadcrumbs/BreadcrumbsBuilder.php"/>
+  <docblock>
+    <description compact="Строитель breadcrumbs."/>
+  </docblock>
+  <member name="items" visibility="private" static="false" line="17">
+    <docblock>
+      <var type="array" of="object">
+        <type full="App\Breadcrumbs\Breadcrumb" namespace="App\Breadcrumbs" name="Breadcrumb"/>
+      </var>
+    </docblock>
+  </member>
+  <method name="addMain" start="24" end="29" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Главная страница."/>
+      <return type="object">
+        <type full="App\Breadcrumbs\$this" namespace="App\Breadcrumbs" name="$this"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="App\Breadcrumbs\BreadcrumbsBuilder" namespace="App\Breadcrumbs" name="BreadcrumbsBuilder"/>
+    </return>
+  </method>
+  <method name="addSources" start="36" end="41" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Источники."/>
+      <return type="object">
+        <type full="App\Breadcrumbs\$this" namespace="App\Breadcrumbs" name="$this"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="App\Breadcrumbs\BreadcrumbsBuilder" namespace="App\Breadcrumbs" name="BreadcrumbsBuilder"/>
+    </return>
+  </method>
+  <method name="addSource" start="49" end="54" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Источник."/>
+      <param type="object" variable="$source">
+        <type full="App\Source" namespace="App" name="Source"/>
+      </param>
+      <return type="object">
+        <type full="App\Breadcrumbs\$this" namespace="App\Breadcrumbs" name="$this"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="App\Breadcrumbs\BreadcrumbsBuilder" namespace="App\Breadcrumbs" name="BreadcrumbsBuilder"/>
+    </return>
+    <parameter name="source" byreference="false" type="object">
+      <type full="App\Source" namespace="App" name="Source"/>
+    </parameter>
+  </method>
+  <method name="addAuthors" start="61" end="66" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Авторы."/>
+      <return type="object">
+        <type full="App\Breadcrumbs\$this" namespace="App\Breadcrumbs" name="$this"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="App\Breadcrumbs\BreadcrumbsBuilder" namespace="App\Breadcrumbs" name="BreadcrumbsBuilder"/>
+    </return>
+  </method>
+  <method name="addAuthor" start="74" end="79" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Автор."/>
+      <param type="string" variable="$author"/>
+      <return type="object">
+        <type full="App\Breadcrumbs\$this" namespace="App\Breadcrumbs" name="$this"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="App\Breadcrumbs\BreadcrumbsBuilder" namespace="App\Breadcrumbs" name="BreadcrumbsBuilder"/>
+    </return>
+    <parameter name="author" byreference="false" type="string"/>
+  </method>
+  <method name="addNews" start="87" end="92" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Новость."/>
+      <param type="object" variable="$news">
+        <type full="App\News" namespace="App" name="News"/>
+      </param>
+      <return type="object">
+        <type full="App\Breadcrumbs\$this" namespace="App\Breadcrumbs" name="$this"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="App\Breadcrumbs\BreadcrumbsBuilder" namespace="App\Breadcrumbs" name="BreadcrumbsBuilder"/>
+    </return>
+    <parameter name="news" byreference="false" type="object">
+      <type full="App\News" namespace="App" name="News"/>
+    </parameter>
+  </method>
+  <method name="addDate" start="102" end="110" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Дата."/>
+      <param type="string" variable="$dateStart"/>
+      <param type="string" variable="$dateEnd"/>
+      <param type="string" variable="$date"/>
+      <return type="object">
+        <type full="App\Breadcrumbs\$this" namespace="App\Breadcrumbs" name="$this"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="App\Breadcrumbs\BreadcrumbsBuilder" namespace="App\Breadcrumbs" name="BreadcrumbsBuilder"/>
+    </return>
+    <parameter name="dateStart" byreference="false" type="string"/>
+    <parameter name="dateEnd" byreference="false" type="string"/>
+    <parameter name="date" byreference="false" type="string"/>
+  </method>
+  <method name="addLanguage" start="118" end="125" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Язык."/>
+      <param type="string" variable="$language"/>
+      <return type="object">
+        <type full="App\Breadcrumbs\$this" namespace="App\Breadcrumbs" name="$this"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="App\Breadcrumbs\BreadcrumbsBuilder" namespace="App\Breadcrumbs" name="BreadcrumbsBuilder"/>
+    </return>
+    <parameter name="language" byreference="false" type="string"/>
+  </method>
+  <method name="addCategory" start="133" end="138" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Категория."/>
+      <param type="string" variable="$category"/>
+      <return type="object">
+        <type full="App\Breadcrumbs\$this" namespace="App\Breadcrumbs" name="$this"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="App\Breadcrumbs\BreadcrumbsBuilder" namespace="App\Breadcrumbs" name="BreadcrumbsBuilder"/>
+    </return>
+    <parameter name="category" byreference="false" type="string"/>
+  </method>
+  <method name="addSearch" start="146" end="151" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Поиск."/>
+      <param type="string" variable="$search"/>
+      <return type="object">
+        <type full="App\Breadcrumbs\$this" namespace="App\Breadcrumbs" name="$this"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="App\Breadcrumbs\BreadcrumbsBuilder" namespace="App\Breadcrumbs" name="BreadcrumbsBuilder"/>
+    </return>
+    <parameter name="search" byreference="false" type="string"/>
+  </method>
+  <method name="add" start="158" end="161" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="Добавить."/>
+      <param type="object" variable="$breadcrumb">
+        <type full="App\Breadcrumbs\DTO\Breadcrumb" namespace="App\Breadcrumbs\DTO" name="Breadcrumb"/>
+      </param>
+    </docblock>
+    <return type="void" nullable="false"/>
+    <parameter name="breadcrumb" byreference="false" type="object">
+      <type full="App\Breadcrumbs\DTO\Breadcrumb" namespace="App\Breadcrumbs\DTO" name="Breadcrumb"/>
+    </parameter>
+  </method>
+  <method name="get" start="168" end="171" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Список."/>
+      <return type="array" of="object">
+        <type full="App\Breadcrumbs\Breadcrumb" namespace="App\Breadcrumbs" name="Breadcrumb"/>
+      </return>
+    </docblock>
+    <return type="array" nullable="false"/>
+  </method>
+</class>

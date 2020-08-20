@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Http\Controllers\Controller" namespace="App\Http\Controllers" name="Controller" abstract="false" final="false" start="12" end="49">
+  <file path="/home/tatu/news/app/Http/Controllers" file="Controller.php" realpath="/home/tatu/news/app/Http/Controllers/Controller.php" size="1359" time="2020-08-20T07:05:49+00:00" unixtime="1597907149" sha1="f0c2223a421f38f3da142d462717fbfdad2fa79e" relative="Http/Controllers/Controller.php"/>
+  <docblock>
+    <description compact="Базовый контроллер."/>
+  </docblock>
+  <extends full="Laravel\Lumen\Routing\Controller" namespace="Laravel\Lumen\Routing" name="Controller" unresolved="true"/>
+  <method name="jsonResponse" start="20" end="24" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Ответ в виде json."/>
+      <param type="array" variable="$data"/>
+      <return type="object">
+        <type full="Illuminate\Http\Response" namespace="Illuminate\Http" name="Response"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Illuminate\Http\Response" namespace="Illuminate\Http" name="Response"/>
+    </return>
+    <parameter name="data" byreference="false" type="array"/>
+  </method>
+  <method name="jsonResponseWithPaginate" start="35" end="48" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Ответ в виде json с пагинацией."/>
+      <param type="object" variable="$data">
+        <type full="Illuminate\Support\Collection" namespace="Illuminate\Support" name="Collection"/>
+      </param>
+      <param type="int" variable="$totalCount"/>
+      <param type="int" variable="$page"/>
+      <param type="int" variable="$limit"/>
+      <return type="object">
+        <type full="Illuminate\Http\Response" namespace="Illuminate\Http" name="Response"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Illuminate\Http\Response" namespace="Illuminate\Http" name="Response"/>
+    </return>
+    <parameter name="data" byreference="false" type="object">
+      <type full="Illuminate\Support\Collection" namespace="Illuminate\Support" name="Collection"/>
+    </parameter>
+    <parameter name="totalCount" byreference="false" type="int"/>
+    <parameter name="page" byreference="false" type="int"/>
+    <parameter name="limit" byreference="false" type="int"/>
+  </method>
+  <extenders>
+    <extender full="App\Http\Controllers\ApiController" namespace="App\Http\Controllers" name="ApiController"/>
+    <extender full="App\Http\Controllers\NewsController" namespace="App\Http\Controllers" name="NewsController"/>
+  </extenders>
+</class>

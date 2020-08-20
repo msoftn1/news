@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<source xmlns="http://xml.phpdox.net/src">
+  <dir name="/home/tatu/news/app">
+    <file name="Source.php" size="234" time="2020-08-20T07:50:33+00:00" unixtime="1597909833" sha1="1633391535db8a381c76998e8a192f58d9e63687" xml="tokens/Source.php.xml"/>
+    <dir name="Console">
+      <dir name="Commands">
+        <file name="NewsLoadCommand.php" size="971" time="2020-08-20T06:52:12+00:00" unixtime="1597906332" sha1="0b8c832ea7fc26d229801ab49830e52ce92e7ffd" xml="tokens/Console/Commands/NewsLoadCommand.php.xml"/>
+        <file name="NewsLoadSourcesCommand.php" size="1030" time="2020-08-20T06:52:12+00:00" unixtime="1597906332" sha1="7170737cfaa6ff05d5672cbf99a3a7172a572f6c" xml="tokens/Console/Commands/NewsLoadSourcesCommand.php.xml"/>
+        <file name="CreateUser.php" size="2058" time="2020-08-20T06:52:12+00:00" unixtime="1597906332" sha1="6669a17357d0fd307538ae0d3b5bac8c629393c0" xml="tokens/Console/Commands/CreateUser.php.xml"/>
+      </dir>
+      <file name="Kernel.php" size="833" time="2020-08-20T06:48:49+00:00" unixtime="1597906129" sha1="e319a2474ac7578559c9946fa50420c8b3b4abbc" xml="tokens/Console/Kernel.php.xml"/>
+    </dir>
+    <dir name="Breadcrumbs">
+      <dir name="DTO">
+        <file name="Breadcrumb.php" size="763" time="2020-08-20T06:43:30+00:00" unixtime="1597905810" sha1="a60ef110bb3a0d083e39fbdaf7d46bdd8423fe98" xml="tokens/Breadcrumbs/DTO/Breadcrumb.php.xml"/>
+      </dir>
+      <file name="BreadcrumbsBuilder.php" size="3317" time="2020-08-20T06:46:33+00:00" unixtime="1597905993" sha1="938ed75f68265fc3f9376634fa26402700c7136a" xml="tokens/Breadcrumbs/BreadcrumbsBuilder.php.xml"/>
+    </dir>
+    <dir name="View">
+      <dir name="Components">
+        <file name="Categories.php" size="801" time="2020-08-20T07:45:35+00:00" unixtime="1597909535" sha1="e4c76721721be2fba250bd3fe774222379faffe6" xml="tokens/View/Components/Categories.php.xml"/>
+        <file name="Languages.php" size="807" time="2020-08-20T07:46:23+00:00" unixtime="1597909583" sha1="e362824c7e2c0a62b1ed6f68202e19890f823077" xml="tokens/View/Components/Languages.php.xml"/>
+        <file name="NewsArchive.php" size="864" time="2020-08-20T07:47:45+00:00" unixtime="1597909665" sha1="29674818a334f2963519eb09480983858989d83f" xml="tokens/View/Components/NewsArchive.php.xml"/>
+        <file name="Sources.php" size="831" time="2020-08-20T07:48:52+00:00" unixtime="1597909732" sha1="463e52cc35daa8c3d1c9103eec4630aa4ab191f2" xml="tokens/View/Components/Sources.php.xml"/>
+      </dir>
+    </dir>
+    <file name="News.php" size="783" time="2020-08-20T07:50:33+00:00" unixtime="1597909833" sha1="47db487e8512c010b2effcf43fc968f4d85c483b" xml="tokens/News.php.xml"/>
+    <dir name="Events">
+      <file name="Event.php" size="121" time="2020-03-09T13:56:46+00:00" unixtime="1583762206" sha1="b0b67558f792aa64e053532408b051cf5814e40f" xml="tokens/Events/Event.php.xml"/>
+    </dir>
+    <file name="User.php" size="816" time="2020-08-20T07:50:33+00:00" unixtime="1597909833" sha1="0a44a1fdf89c283fa3e025d70068ab140e44bddf" xml="tokens/User.php.xml"/>
+    <dir name="Repository">
+      <file name="SourceRepository.php" size="2486" time="2020-08-20T07:52:02+00:00" unixtime="1597909922" sha1="5bcb30eda5d4c9d48ac425b92a641051d694e921" xml="tokens/Repository/SourceRepository.php.xml"/>
+      <file name="NewsRepository.php" size="10591" time="2020-08-20T07:51:51+00:00" unixtime="1597909911" sha1="c49a9250be400b22794e186830aa6c6d500f8bc5" xml="tokens/Repository/NewsRepository.php.xml"/>
+      <file name="EloquentRepositoryInterface.php" size="490" time="2020-08-20T07:17:30+00:00" unixtime="1597907850" sha1="5b617a51595b5c49ce6d3b5dd8d5aa0db2e28afc" xml="tokens/Repository/EloquentRepositoryInterface.php.xml"/>
+      <file name="BaseRepository.php" size="883" time="2020-08-20T07:17:30+00:00" unixtime="1597907850" sha1="978acae0680f1d3123365efc29372b107615c836" xml="tokens/Repository/BaseRepository.php.xml"/>
+      <file name="UserRepository.php" size="926" time="2020-08-20T07:34:35+00:00" unixtime="1597908875" sha1="ae7333dcc994a59c03060b2637d85b943339ec0e" xml="tokens/Repository/UserRepository.php.xml"/>
+    </dir>
+    <dir name="Jobs">
+      <file name="Job.php" size="720" time="2020-03-09T13:56:46+00:00" unixtime="1583762206" sha1="2f26ffe3461bd032d12e498f073192b1641f328a" xml="tokens/Jobs/Job.php.xml"/>
+    </dir>
+    <dir name="Services">
+      <file name="BreadcrumbsService.php" size="424" time="2020-08-20T07:35:59+00:00" unixtime="1597908959" sha1="61171eeda23e003778f4992cd437ad543d9ac41b" xml="tokens/Services/BreadcrumbsService.php.xml"/>
+      <file name="ImportNewsService.php" size="5379" time="2020-08-20T07:38:12+00:00" unixtime="1597909092" sha1="e9415bb950c57e81786127ba14caaee2736863ce" xml="tokens/Services/ImportNewsService.php.xml"/>
+      <file name="ResizeService.php" size="674" time="2020-08-20T07:38:38+00:00" unixtime="1597909118" sha1="856a6f64229f822c79829a8f2146f47846c70e2b" xml="tokens/Services/ResizeService.php.xml"/>
+    </dir>
+    <dir name="Exceptions">
+      <file name="Handler.php" size="1362" time="2020-08-20T06:48:49+00:00" unixtime="1597906129" sha1="2d66116dc7ff66e92cc208281d9ab316e21f29f1" xml="tokens/Exceptions/Handler.php.xml"/>
+    </dir>
+    <dir name="Http">
+      <dir name="Controllers">
+        <file name="ApiController.php" size="4301" time="2020-08-20T07:04:37+00:00" unixtime="1597907077" sha1="5612910ee6117d1efc93bed18aecb6cf9ed73883" xml="tokens/Http/Controllers/ApiController.php.xml"/>
+        <file name="NewsController.php" size="8505" time="2020-08-20T07:51:23+00:00" unixtime="1597909883" sha1="e695de76eb12d71ef494ed3c8456ca6e4dae2782" xml="tokens/Http/Controllers/NewsController.php.xml"/>
+        <file name="Controller.php" size="1359" time="2020-08-20T07:05:49+00:00" unixtime="1597907149" sha1="f0c2223a421f38f3da142d462717fbfdad2fa79e" xml="tokens/Http/Controllers/Controller.php.xml"/>
+      </dir>
+      <dir name="Middleware">
+        <file name="ExampleMiddleware.php" size="333" time="2020-08-20T06:48:49+00:00" unixtime="1597906129" sha1="d481b2f3187faf2e67935ce041897a71f80796d3" xml="tokens/Http/Middleware/ExampleMiddleware.php.xml"/>
+        <file name="Authenticate.php" size="903" time="2020-08-20T06:48:49+00:00" unixtime="1597906129" sha1="1b056f1d3e57b050e173f34a9f1ca2306a254834" xml="tokens/Http/Middleware/Authenticate.php.xml"/>
+      </dir>
+    </dir>
+    <dir name="Libraries">
+      <dir name="NewsApi">
+        <file name="Client.php" size="2408" time="2020-08-20T07:13:56+00:00" unixtime="1597907636" sha1="3b76e957ef1fb40ec21422d8d622220eb140792a" xml="tokens/Libraries/NewsApi/Client.php.xml"/>
+        <dir name="Exceptions">
+          <file name="NewsApiException.php" size="196" time="2020-08-20T07:13:56+00:00" unixtime="1597907636" sha1="3e9a4884610d9d5f5e47cbf89cdc8467fa0cf716" xml="tokens/Libraries/NewsApi/Exceptions/NewsApiException.php.xml"/>
+        </dir>
+      </dir>
+    </dir>
+    <dir name="Providers">
+      <file name="AppServiceProvider.php" size="716" time="2020-08-19T05:34:02+00:00" unixtime="1597815242" sha1="9b67f7eb7189f1d1c7847ac500cb8080ea0dc84a" xml="tokens/Providers/AppServiceProvider.php.xml"/>
+      <file name="EventServiceProvider.php" size="283" time="2020-08-20T07:15:37+00:00" unixtime="1597907737" sha1="f8af5013aa40d59c9c1e7bc0d108f4c62a63f936" xml="tokens/Providers/EventServiceProvider.php.xml"/>
+      <file name="AuthServiceProvider.php" size="1181" time="2020-08-20T06:48:49+00:00" unixtime="1597906129" sha1="ad9c4ca6d249f15f7a92379e78aefeb721a143b6" xml="tokens/Providers/AuthServiceProvider.php.xml"/>
+    </dir>
+    <dir name="Logger">
+      <file name="BaseLogger.php" size="869" time="2020-08-20T07:15:11+00:00" unixtime="1597907711" sha1="acbcf97921a7168ede14340d9457512e7ff33cb9" xml="tokens/Logger/BaseLogger.php.xml"/>
+    </dir>
+  </dir>
+</source>

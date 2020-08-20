@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Jobs\Job" namespace="App\Jobs" name="Job" abstract="true" final="false" start="10" end="24">
+  <file path="/home/tatu/news/app/Jobs" file="Job.php" realpath="/home/tatu/news/app/Jobs/Job.php" size="720" time="2020-03-09T13:56:46+00:00" unixtime="1583762206" sha1="2f26ffe3461bd032d12e498f073192b1641f328a" relative="Jobs/Job.php"/>
+  <implements full="Illuminate\Contracts\Queue\ShouldQueue" namespace="Illuminate\Contracts\Queue" name="ShouldQueue" unresolved="true"/>
+  <uses full="Illuminate\Queue\InteractsWithQueue" namespace="Illuminate\Queue" name="InteractsWithQueue" start="23" end="23" unresolved="true"/>
+  <uses full="Illuminate\Bus\Queueable" namespace="Illuminate\Bus" name="Queueable" start="23" end="23" unresolved="true"/>
+  <uses full="Illuminate\Queue\SerializesModels" namespace="Illuminate\Queue" name="SerializesModels" start="23" end="23" unresolved="true"/>
+</class>

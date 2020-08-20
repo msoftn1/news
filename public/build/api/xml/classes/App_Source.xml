@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Source" namespace="App" name="Source" abstract="false" final="false" start="13" end="18">
+  <file path="/home/tatu/news/app" file="Source.php" realpath="/home/tatu/news/app/Source.php" size="234" time="2020-08-20T07:50:33+00:00" unixtime="1597909833" sha1="1633391535db8a381c76998e8a192f58d9e63687" relative="Source.php"/>
+  <docblock>
+    <description compact="Источники."/>
+  </docblock>
+  <extends full="Illuminate\Database\Eloquent\Model" namespace="Illuminate\Database\Eloquent" name="Model" unresolved="true"/>
+  <uses full="Rennokki\QueryCache\Traits\QueryCacheable" namespace="Rennokki\QueryCache\Traits" name="QueryCacheable" start="15" end="15" unresolved="true"/>
+  <member name="table" default="'sources'" type="string" visibility="protected" static="false" line="17"/>
+</class>

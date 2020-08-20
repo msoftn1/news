@@ -1,0 +1,296 @@
+openapi: 3.0.0
+info:
+  description: Это API сервер новостей. Здесь вы найдете документацию.
+  version: "1.0.0"
+  title: Swagger News
+  termsOfService: 'http://swagger.io/terms/'
+  contact:
+    email: apiteam@swagger.io
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+servers:
+  # Added by API Auto Mocking Plugin
+  - url: http://localhost:8000
+tags:
+  - name: news
+    description: API новостей
+paths:
+  /api/sources:
+    get:
+      tags:
+        - news
+      description: Получить каналы.
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: '#/components/schemas/SourcesResponse'
+  /api/newsBySource:
+    get:
+      tags:
+        - news
+      description: Получить новости по источнику.
+      parameters:
+        - in: query
+          name: source
+          description: Источник.
+          required: true
+          schema:
+            type: integer
+        - in: query
+          name: page
+          description: Страница.
+          required: false
+          schema:
+            type: integer
+        - in: query
+          name: limit
+          description: Количество возвращаемых элементов.
+          required: false
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: '#/components/schemas/NewsResponse'
+  /api/newsByLanguage:
+    get:
+      tags:
+        - news
+      description: Получить новости по языку.
+      parameters:
+        - in: query
+          name: language
+          description: Язык.
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: page
+          description: Страница.
+          required: false
+          schema:
+            type: integer
+        - in: query
+          name: limit
+          description: Количество возвращаемых элементов.
+          required: false
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: '#/components/schemas/NewsResponse'
+  /api/newsByCategory:
+    get:
+      tags:
+        - news
+      description: Получить новости по категории.
+      parameters:
+        - in: query
+          name: category
+          description: Категория.
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: page
+          description: Страница.
+          required: false
+          schema:
+            type: integer
+        - in: query
+          name: limit
+          description: Количество возвращаемых элементов.
+          required: false
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: '#/components/schemas/NewsResponse'
+  /api/newsByCountry:
+    get:
+      tags:
+        - news
+      description: Получить новости по стране.
+      parameters:
+        - in: query
+          name: country
+          description: Категория.
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: page
+          description: Страница.
+          required: false
+          schema:
+            type: integer
+        - in: query
+          name: limit
+          description: Количество возвращаемых элементов.
+          required: false
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: '#/components/schemas/NewsResponse'
+  /api/newsSearch:
+    get:
+      tags:
+        - news
+      description: Поиск новостей.
+      parameters:
+        - in: query
+          name: search
+          description: Поисковый запрос.
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: page
+          description: Страница.
+          required: false
+          schema:
+            type: integer
+        - in: query
+          name: limit
+          description: Количество возвращаемых элементов.
+          required: false
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: '#/components/schemas/NewsResponse'
+
+externalDocs:
+  description: Find out more about Swagger
+  url: 'http://swagger.io'
+components:
+  schemas:
+    SourcesResponse:
+      type: object
+      required:
+        - count
+        - data
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/SourcesItemResponse'
+    NewsResponse:
+      type: object
+      required:
+        - data
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/NewsItemResponse'
+    SourcesItemResponse:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int32
+          example: 1
+        identifier:
+          type: string
+          example: abc-news
+        name:
+          type: string
+          example: name
+        description:
+          type: string
+          example: Your trusted source for breaking news, analysis, exclusive interviews, headlines, and videos at ABCNews.com.
+        url:
+          type: string
+          example: https://abcnews.go.com
+        category:
+          type: string
+          example: general
+        language:
+          type: string
+          example: en
+        country:
+          type: string
+          example: us
+        created_at:
+          type: string
+          format: date-time
+          example: '2020-08-19T11:09:49.000000Z'
+        updated_at:
+          type: string
+          format: date-time
+          example: '2020-08-19T11:09:49.000000Z'
+    NewsItemResponse:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int32
+          example: 1
+        source_id:
+          type: integer
+          format: int32
+          example: 1
+        author:
+          type: string
+          example: LORNE COOK Associated Press
+        title:
+          type: string
+          example: EU leaders seek to ramp up pressure on Belarus president
+        description:
+          type: string
+          example: description
+        url:
+          type: string
+          example: https://abcnews.go.com/Business/wireStory/eu-leaders-seek-ramp-pressure-belarus-president-72464873
+        url_to_image:
+          type: string
+          example: https://s.abcnews.com/images/International/WireAP_e201c710963b46fa90512b5f09b623c1_16x9_992.jpg
+        image:
+          type: string
+          example: http://localhost:8000/files/news/18639510651896078672.jpeg
+        published_at:
+          type: string
+          format: date-time
+          example: '2020-08-19 10:46:20'
+        content:
+          type: string
+          example: TEHRAN, Iran -- \r\nIran surpassed 20,000 confirmed deaths from the coronavirus on Wednesday, the health ministry said the highest death toll for any Middle East country so far in the pandemic. \r\nThe a… [+4530 chars]
+        created_at:
+          type: string
+          format: date-time
+          example: '2020-08-19T11:09:49.000000Z'
+        updated_at:
+          type: string
+          format: date-time
+          example: '2020-08-19T11:09:49.000000Z'

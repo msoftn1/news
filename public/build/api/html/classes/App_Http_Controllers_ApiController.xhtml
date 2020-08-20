@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - App\Http\Controllers\ApiController</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#App_Http_Controllers">App\Http\Controllers</a>
+          </li>
+          <li class="separator">ApiController</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/Http/Controllers/ApiController.php.xhtml#line15">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>App\Http\Controllers\</small>ApiController</h1>
+        <h4>Контроллер API.</h4>
+        <p/>
+        <ul/>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class ApiController
+                extends <a title="App\Http\Controllers\Controller" href="../classes/App_Http_Controllers_Controller.xhtml">Controller</a>
+            {<br/><ul class="none"><li>// members</li><li>private  <a href="#members">$sourceRepository</a>;
+                    </li><li>private  <a href="#members">$newsRepository</a>;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="App\Http\Controllers\ApiController" href="../classes/App_Http_Controllers_ApiController/__construct.xhtml">__construct</a>()
+                    </li><li>public <span title="Response">Response</span> <a title="App\Http\Controllers\ApiController" href="../classes/App_Http_Controllers_ApiController/sources.xhtml">sources</a>()
+                    </li><li>public <span title="Response">Response</span> <a title="App\Http\Controllers\ApiController" href="../classes/App_Http_Controllers_ApiController/newsBySource.xhtml">newsBySource</a>()
+                    </li><li>public <span title="Response">Response</span> <a title="App\Http\Controllers\ApiController" href="../classes/App_Http_Controllers_ApiController/newsByLanguage.xhtml">newsByLanguage</a>()
+                    </li><li>public <span title="Response">Response</span> <a title="App\Http\Controllers\ApiController" href="../classes/App_Http_Controllers_ApiController/newsByCategory.xhtml">newsByCategory</a>()
+                    </li><li>public <span title="Response">Response</span> <a title="App\Http\Controllers\ApiController" href="../classes/App_Http_Controllers_ApiController/newsByCountry.xhtml">newsByCountry</a>()
+                    </li><li>public <span title="Response">Response</span> <a title="App\Http\Controllers\ApiController" href="../classes/App_Http_Controllers_ApiController/newsSearch.xhtml">newsSearch</a>()
+                    </li><li>private array <a title="App\Http\Controllers\ApiController" href="../classes/App_Http_Controllers_ApiController/getPaginate.xhtml">getPaginate</a>()
+                    </li></ul><ul class="none"><li>// Inherited methods from <span title="App\Http\Controllers\Controller">Controller</span></li><li>public Response <a title="App\Http\Controllers\Controller" href="../classes/App_Http_Controllers_Controller/jsonResponse.xhtml">jsonResponse</a>()
+                        </li><li>public Response <a title="App\Http\Controllers\Controller" href="../classes/App_Http_Controllers_Controller/jsonResponseWithPaginate.xhtml">jsonResponseWithPaginate</a>()
+                        </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Extends</h4>
+          <ul>
+            <li>
+              <a title="App\Http\Controllers\Controller" href="../classes/App_Http_Controllers_Controller.xhtml">App\Http\Controllers\Controller</a>
+            </li>
+          </ul>
+        </div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>private</h4>
+          <ul class="members">
+            <li id="newsRepository">
+              <strong>$newsRepository</strong>
+              <br/>
+              <span class="indent">Репозиторий новостей.</span>
+            </li>
+            <li id="sourceRepository">
+              <strong>$sourceRepository</strong>
+              <br/>
+              <span class="indent">Репозиторий источников новостей.</span>
+            </li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>private</h4>
+          <ul>
+            <li id="getPaginate"><a title="App\Http\Controllers\ApiController" href="../classes/App_Http_Controllers_ApiController/getPaginate.xhtml">getPaginate()</a>
+                — Пагинация.</li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="App\Http\Controllers\ApiController" href="../classes/App_Http_Controllers_ApiController/__construct.xhtml">__construct()</a>
+                — Конструктор.</li>
+            <li id="newsByCategory"><a title="App\Http\Controllers\ApiController" href="../classes/App_Http_Controllers_ApiController/newsByCategory.xhtml">newsByCategory()</a>
+                — Новости по категории.</li>
+            <li id="newsByCountry"><a title="App\Http\Controllers\ApiController" href="../classes/App_Http_Controllers_ApiController/newsByCountry.xhtml">newsByCountry()</a>
+                — Новости по стране.</li>
+            <li id="newsByLanguage"><a title="App\Http\Controllers\ApiController" href="../classes/App_Http_Controllers_ApiController/newsByLanguage.xhtml">newsByLanguage()</a>
+                — Новости по языку.</li>
+            <li id="newsBySource"><a title="App\Http\Controllers\ApiController" href="../classes/App_Http_Controllers_ApiController/newsBySource.xhtml">newsBySource()</a>
+                — Новости по источнику.</li>
+            <li id="newsSearch"><a title="App\Http\Controllers\ApiController" href="../classes/App_Http_Controllers_ApiController/newsSearch.xhtml">newsSearch()</a>
+                — Поиск новостей.</li>
+            <li id="sources"><a title="App\Http\Controllers\ApiController" href="../classes/App_Http_Controllers_ApiController/sources.xhtml">sources()</a>
+                — Источники.</li>
+          </ul>
+          <h3>Inherited from <a title="App\Http\Controllers\Controller" href="../classes/App_Http_Controllers_Controller.xhtml">App\Http\Controllers\Controller</a></h3>
+          <h4>public</h4>
+          <ul>
+            <li id="jsonResponse"><a title="App\Http\Controllers\Controller" href="../classes/App_Http_Controllers_Controller/jsonResponse.xhtml">jsonResponse()</a>
+                — Ответ в виде json.</li>
+            <li id="jsonResponseWithPaginate"><a title="App\Http\Controllers\Controller" href="../classes/App_Http_Controllers_Controller/jsonResponseWithPaginate.xhtml">jsonResponseWithPaginate()</a>
+                — Ответ в виде json с пагинацией.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0 - Copyright (C) 2010 - 2020 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

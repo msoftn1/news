@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\View\Components\Sources" namespace="App\View\Components" name="Sources" abstract="false" final="false" start="13" end="39">
+  <file path="/home/tatu/news/app/View/Components" file="Sources.php" realpath="/home/tatu/news/app/View/Components/Sources.php" size="831" time="2020-08-20T07:48:52+00:00" unixtime="1597909732" sha1="463e52cc35daa8c3d1c9103eec4630aa4ab191f2" relative="View/Components/Sources.php"/>
+  <docblock>
+    <description compact="Компонент источников."/>
+  </docblock>
+  <extends full="Illuminate\View\Component" namespace="Illuminate\View" name="Component" unresolved="true"/>
+  <member name="sourceRepository" visibility="private" static="false" line="16">
+    <docblock>
+      <description compact="Репозиторий источников."/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="22" end="25" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Конструктор."/>
+      <param type="object" variable="$sourceRepository">
+        <type full="App\Repository\SourceRepository" namespace="App\Repository" name="SourceRepository"/>
+      </param>
+    </docblock>
+    <parameter name="sourceRepository" byreference="false" type="object">
+      <type full="App\Repository\SourceRepository" namespace="App\Repository" name="SourceRepository"/>
+    </parameter>
+  </constructor>
+  <method name="render" start="33" end="38" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Рендеринг."/>
+      <return type="object">
+        <type full="Illuminate\View\View" namespace="Illuminate\View" name="View"/>
+      </return>
+      <throws type="object">
+        <type full="\Exception" namespace="" name="Exception"/>
+      </throws>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Illuminate\View\View" namespace="Illuminate\View" name="View"/>
+    </return>
+  </method>
+</class>

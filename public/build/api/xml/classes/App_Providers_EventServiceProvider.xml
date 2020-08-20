@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Providers\EventServiceProvider" namespace="App\Providers" name="EventServiceProvider" abstract="false" final="false" start="7" end="15">
+  <file path="/home/tatu/news/app/Providers" file="EventServiceProvider.php" realpath="/home/tatu/news/app/Providers/EventServiceProvider.php" size="283" time="2020-08-20T07:15:37+00:00" unixtime="1597907737" sha1="f8af5013aa40d59c9c1e7bc0d108f4c62a63f936" relative="Providers/EventServiceProvider.php"/>
+  <extends full="Laravel\Lumen\Providers\EventServiceProvider" namespace="Laravel\Lumen\Providers" name="EventServiceProvider" unresolved="true"/>
+  <member name="listen" default="" type="array" visibility="protected" static="false" line="14">
+    <docblock>
+      <description compact="The event listener mappings for the application."/>
+      <var type="array"/>
+    </docblock>
+  </member>
+</class>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\View\Components\NewsArchive" namespace="App\View\Components" name="NewsArchive" abstract="false" final="false" start="14" end="40">
+  <file path="/home/tatu/news/app/View/Components" file="NewsArchive.php" realpath="/home/tatu/news/app/View/Components/NewsArchive.php" size="864" time="2020-08-20T07:47:45+00:00" unixtime="1597909665" sha1="29674818a334f2963519eb09480983858989d83f" relative="View/Components/NewsArchive.php"/>
+  <docblock>
+    <description compact="Компонент архивов новостей."/>
+  </docblock>
+  <extends full="Illuminate\View\Component" namespace="Illuminate\View" name="Component" unresolved="true"/>
+  <member name="newsRepository" visibility="private" static="false" line="17">
+    <docblock>
+      <description compact="Репозиторий источников."/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="23" end="26" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Конструктор."/>
+      <param type="object" variable="$newsRepository">
+        <type full="App\Repository\NewsRepository" namespace="App\Repository" name="NewsRepository"/>
+      </param>
+    </docblock>
+    <parameter name="newsRepository" byreference="false" type="object">
+      <type full="App\Repository\NewsRepository" namespace="App\Repository" name="NewsRepository"/>
+    </parameter>
+  </constructor>
+  <method name="render" start="34" end="39" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Рендеринг."/>
+      <return type="object">
+        <type full="Illuminate\View\View" namespace="Illuminate\View" name="View"/>
+      </return>
+      <throws type="object">
+        <type full="\Exception" namespace="" name="Exception"/>
+      </throws>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Illuminate\View\View" namespace="Illuminate\View" name="View"/>
+    </return>
+  </method>
+</class>

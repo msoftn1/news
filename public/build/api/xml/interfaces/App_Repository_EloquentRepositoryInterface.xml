@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="App\Repository\EloquentRepositoryInterface" namespace="App\Repository" name="EloquentRepositoryInterface" abstract="false" final="false" start="12" end="30">
+  <file path="/home/tatu/news/app/Repository" file="EloquentRepositoryInterface.php" realpath="/home/tatu/news/app/Repository/EloquentRepositoryInterface.php" size="490" time="2020-08-20T07:17:30+00:00" unixtime="1597907850" sha1="5b617a51595b5c49ce6d3b5dd8d5aa0db2e28afc" relative="Repository/EloquentRepositoryInterface.php"/>
+  <docblock>
+    <description compact="Интерфейс репозиториев."/>
+  </docblock>
+  <method name="create" start="21" end="21" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Создать объект."/>
+      <param type="array" variable="$attributes"/>
+      <return type="object">
+        <type full="Illuminate\Database\Eloquent\Model" namespace="Illuminate\Database\Eloquent" name="Model"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Illuminate\Database\Eloquent\Model" namespace="Illuminate\Database\Eloquent" name="Model"/>
+    </return>
+    <parameter name="attributes" byreference="false" type="array"/>
+  </method>
+  <method name="find" start="29" end="29" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Поиск по ID"/>
+      <param type="string" variable="$id"/>
+      <return type="object">
+        <type full="Illuminate\Database\Eloquent\Model" namespace="Illuminate\Database\Eloquent" name="Model"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="true">
+      <type full="Illuminate\Database\Eloquent\Model" namespace="Illuminate\Database\Eloquent" name="Model"/>
+    </return>
+    <parameter name="id" byreference="false" type="string"/>
+  </method>
+  <implementors>
+    <class full="App\Repository\SourceRepository" namespace="App\Repository" name="SourceRepository"/>
+    <class full="App\Repository\NewsRepository" namespace="App\Repository" name="NewsRepository"/>
+    <class full="App\Repository\BaseRepository" namespace="App\Repository" name="BaseRepository"/>
+    <class full="App\Repository\UserRepository" namespace="App\Repository" name="UserRepository"/>
+  </implementors>
+</interface>

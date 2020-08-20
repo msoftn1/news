@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Breadcrumbs\DTO\Breadcrumb" namespace="App\Breadcrumbs\DTO" name="Breadcrumb" abstract="false" final="false" start="9" end="50">
+  <file path="/home/tatu/news/app/Breadcrumbs/DTO" file="Breadcrumb.php" realpath="/home/tatu/news/app/Breadcrumbs/DTO/Breadcrumb.php" size="763" time="2020-08-20T06:43:30+00:00" unixtime="1597905810" sha1="a60ef110bb3a0d083e39fbdaf7d46bdd8423fe98" relative="Breadcrumbs/DTO/Breadcrumb.php"/>
+  <docblock>
+    <description compact="Элемент breadcrumbs."/>
+  </docblock>
+  <member name="url" visibility="private" static="false" line="12">
+    <docblock>
+      <description compact="url"/>
+    </docblock>
+  </member>
+  <member name="title" visibility="private" static="false" line="15">
+    <docblock>
+      <description compact="текст ссылки"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="23" end="27" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Конструктор."/>
+      <param type="string" variable="$url"/>
+      <param type="string" variable="$title"/>
+    </docblock>
+    <parameter name="url" byreference="false" type="string"/>
+    <parameter name="title" byreference="false" type="string"/>
+  </constructor>
+  <method name="getUrl" start="34" end="37" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Получить URL."/>
+      <return type="string"/>
+    </docblock>
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getTitle" start="44" end="47" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Получить название."/>
+      <return type="string"/>
+    </docblock>
+    <return type="string" nullable="false"/>
+  </method>
+</class>

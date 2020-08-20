@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Repository\NewsRepository" namespace="App\Repository" name="NewsRepository" abstract="false" final="false" start="15" end="353">
+  <file path="/home/tatu/news/app/Repository" file="NewsRepository.php" realpath="/home/tatu/news/app/Repository/NewsRepository.php" size="10591" time="2020-08-20T07:51:51+00:00" unixtime="1597909911" sha1="c49a9250be400b22794e186830aa6c6d500f8bc5" relative="Repository/NewsRepository.php"/>
+  <docblock>
+    <description compact="Репозиторий новостей."/>
+  </docblock>
+  <extends full="App\Repository\BaseRepository" namespace="App\Repository" name="BaseRepository"/>
+  <constructor name="__construct" start="22" end="25" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Конструктор."/>
+      <param type="object" variable="$model">
+        <type full="App\News" namespace="App" name="News"/>
+      </param>
+    </docblock>
+    <parameter name="model" byreference="false" type="object">
+      <type full="App\News" namespace="App" name="News"/>
+    </parameter>
+  </constructor>
+  <method name="existsByAuthorAndPublishedAt" start="34" end="40" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Проверитб наличие новости по автору и дате публикации."/>
+      <param type="string" variable="$author"/>
+      <param type="string" variable="$publishedAt"/>
+      <return type="object">
+        <type full="App\Repository\bool" namespace="App\Repository" name="bool"/>
+      </return>
+    </docblock>
+    <return type="bool" nullable="false"/>
+    <parameter name="author" byreference="false" type="string"/>
+    <parameter name="publishedAt" byreference="false" type="string"/>
+  </method>
+  <method name="getTopNews" start="47" end="55" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Получить топовые новости."/>
+      <return type="object">
+        <type full="Illuminate\Contracts\Pagination\LengthAwarePaginator" namespace="Illuminate\Contracts\Pagination" name="LengthAwarePaginator"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Illuminate\Contracts\Pagination\LengthAwarePaginator" namespace="Illuminate\Contracts\Pagination" name="LengthAwarePaginator"/>
+    </return>
+  </method>
+  <method name="findBySource" start="63" end="71" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Поиск по источнику."/>
+      <param type="string" variable="$identifier"/>
+      <return type="object">
+        <type full="Illuminate\Contracts\Pagination\LengthAwarePaginator" namespace="Illuminate\Contracts\Pagination" name="LengthAwarePaginator"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Illuminate\Contracts\Pagination\LengthAwarePaginator" namespace="Illuminate\Contracts\Pagination" name="LengthAwarePaginator"/>
+    </return>
+    <parameter name="identifier" byreference="false" type="string"/>
+  </method>
+  <method name="findBySourceApi" start="81" end="90" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Поиск по источнику в формате для API."/>
+      <param type="string" variable="$identifier"/>
+      <param type="int" variable="$offset"/>
+      <param type="int" variable="$limit"/>
+      <return type="array"/>
+    </docblock>
+    <return type="array" nullable="false"/>
+    <parameter name="identifier" byreference="false" type="string"/>
+    <parameter name="offset" byreference="false" type="int"/>
+    <parameter name="limit" byreference="false" type="int"/>
+  </method>
+  <method name="getAuthors" start="97" end="105" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Авторы."/>
+      <return type="object">
+        <type full="Illuminate\Contracts\Pagination\LengthAwarePaginator" namespace="Illuminate\Contracts\Pagination" name="LengthAwarePaginator"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Illuminate\Contracts\Pagination\LengthAwarePaginator" namespace="Illuminate\Contracts\Pagination" name="LengthAwarePaginator"/>
+    </return>
+  </method>
+  <method name="findNewsByAuthor" start="112" end="121" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Новости по автору."/>
+      <return type="object">
+        <type full="Illuminate\Contracts\Pagination\LengthAwarePaginator" namespace="Illuminate\Contracts\Pagination" name="LengthAwarePaginator"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Illuminate\Contracts\Pagination\LengthAwarePaginator" namespace="Illuminate\Contracts\Pagination" name="LengthAwarePaginator"/>
+    </return>
+    <parameter name="author" byreference="false" type="string"/>
+  </method>
+  <method name="findNewsByPublishedAt" start="130" end="136" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Новости по датам публикации."/>
+      <param type="string" variable="$dateStart"/>
+      <param type="string" variable="$dateEnd"/>
+      <return type="object">
+        <type full="Illuminate\Contracts\Pagination\LengthAwarePaginator" namespace="Illuminate\Contracts\Pagination" name="LengthAwarePaginator"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Illuminate\Contracts\Pagination\LengthAwarePaginator" namespace="Illuminate\Contracts\Pagination" name="LengthAwarePaginator"/>
+    </return>
+    <parameter name="dateStart" byreference="false" type="string"/>
+    <parameter name="dateEnd" byreference="false" type="string"/>
+  </method>
+  <method name="findByLanguage" start="143" end="151" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Новости по языку."/>
+      <return type="object">
+        <type full="Illuminate\Contracts\Pagination\LengthAwarePaginator" namespace="Illuminate\Contracts\Pagination" name="LengthAwarePaginator"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Illuminate\Contracts\Pagination\LengthAwarePaginator" namespace="Illuminate\Contracts\Pagination" name="LengthAwarePaginator"/>
+    </return>
+    <parameter name="language" byreference="false" type="string"/>
+  </method>
+  <method name="findByLanguageApi" start="161" end="170" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Новости по языку для API."/>
+      <param type="string" variable="$language"/>
+      <param type="int" variable="$offset"/>
+      <param type="int" variable="$limit"/>
+      <return type="array"/>
+    </docblock>
+    <return type="array" nullable="false"/>
+    <parameter name="language" byreference="false" type="string"/>
+    <parameter name="offset" byreference="false" type="int"/>
+    <parameter name="limit" byreference="false" type="int"/>
+  </method>
+  <method name="findByCategory" start="178" end="186" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Новости по категории."/>
+      <param type="string" variable="$category"/>
+      <return type="object">
+        <type full="Illuminate\Contracts\Pagination\LengthAwarePaginator" namespace="Illuminate\Contracts\Pagination" name="LengthAwarePaginator"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Illuminate\Contracts\Pagination\LengthAwarePaginator" namespace="Illuminate\Contracts\Pagination" name="LengthAwarePaginator"/>
+    </return>
+    <parameter name="category" byreference="false" type="string"/>
+  </method>
+  <method name="findByCategoryApi" start="196" end="205" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Новости по категории для API."/>
+      <param type="string" variable="$category"/>
+      <param type="int" variable="$offset"/>
+      <param type="int" variable="$limit"/>
+      <return type="array"/>
+    </docblock>
+    <return type="array" nullable="false"/>
+    <parameter name="category" byreference="false" type="string"/>
+    <parameter name="offset" byreference="false" type="int"/>
+    <parameter name="limit" byreference="false" type="int"/>
+  </method>
+  <method name="findByCountryApi" start="215" end="224" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Новости по стране для API."/>
+      <param type="string" variable="$country"/>
+      <param type="int" variable="$offset"/>
+      <param type="int" variable="$limit"/>
+      <return type="object">
+        <type full="Illuminate\Contracts\Pagination\LengthAwarePaginator" namespace="Illuminate\Contracts\Pagination" name="LengthAwarePaginator"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Illuminate\Contracts\Pagination\LengthAwarePaginator" namespace="Illuminate\Contracts\Pagination" name="LengthAwarePaginator"/>
+    </return>
+    <parameter name="country" byreference="false" type="string"/>
+    <parameter name="offset" byreference="false" type="int"/>
+    <parameter name="limit" byreference="false" type="int"/>
+  </method>
+  <method name="searchNewsQuery" start="232" end="245" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Билдер для поиска новостей."/>
+      <param type="string" variable="$query"/>
+      <return type="object">
+        <type full="Illuminate\Database\Eloquent\Builder" namespace="Illuminate\Database\Eloquent" name="Builder"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Illuminate\Database\Eloquent\Builder" namespace="Illuminate\Database\Eloquent" name="Builder"/>
+    </return>
+    <parameter name="query" byreference="false" type="string"/>
+  </method>
+  <method name="searchNews" start="253" end="258" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Поиск новостей."/>
+      <param type="string" variable="$query"/>
+      <return type="object">
+        <type full="Illuminate\Database\Eloquent\Collection" namespace="Illuminate\Database\Eloquent" name="Collection"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Illuminate\Database\Eloquent\Collection" namespace="Illuminate\Database\Eloquent" name="Collection"/>
+    </return>
+    <parameter name="query" byreference="false" type="string"/>
+  </method>
+  <method name="searchNewsApi" start="268" end="271" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Поиск новостей для API."/>
+      <param type="string" variable="$query"/>
+      <param type="int" variable="$offset"/>
+      <param type="int" variable="$limit"/>
+      <return type="array"/>
+    </docblock>
+    <return type="array" nullable="false"/>
+    <parameter name="query" byreference="false" type="string"/>
+    <parameter name="offset" byreference="false" type="int"/>
+    <parameter name="limit" byreference="false" type="int"/>
+  </method>
+  <method name="searchNewsPaginate" start="279" end="290" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Поиск новостей пагинация."/>
+      <param type="string" variable="$query"/>
+      <return type="object">
+        <type full="Illuminate\Contracts\Pagination\LengthAwarePaginator" namespace="Illuminate\Contracts\Pagination" name="LengthAwarePaginator"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Illuminate\Contracts\Pagination\LengthAwarePaginator" namespace="Illuminate\Contracts\Pagination" name="LengthAwarePaginator"/>
+    </return>
+    <parameter name="query" byreference="false" type="string"/>
+  </method>
+  <method name="getArchives" start="298" end="315" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Получить даты архивов новостей."/>
+      <return type="object">
+        <type full="Illuminate\Database\Eloquent\Collection" namespace="Illuminate\Database\Eloquent" name="Collection"/>
+      </return>
+      <throws type="object">
+        <type full="\Exception" namespace="" name="Exception"/>
+      </throws>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Illuminate\Database\Eloquent\Collection" namespace="Illuminate\Database\Eloquent" name="Collection"/>
+    </return>
+  </method>
+  <method name="api" start="325" end="340" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="Выполнить запрос для API."/>
+      <param type="object" variable="$newsQuery">
+        <type full="Illuminate\Database\Eloquent\Builder" namespace="Illuminate\Database\Eloquent" name="Builder"/>
+      </param>
+      <param type="int" variable="$offset"/>
+      <param type="int" variable="$limit"/>
+      <return type="array"/>
+    </docblock>
+    <return type="array" nullable="false"/>
+    <parameter name="newsQuery" byreference="false" type="object">
+      <type full="Illuminate\Database\Eloquent\Builder" namespace="Illuminate\Database\Eloquent" name="Builder"/>
+    </parameter>
+    <parameter name="offset" byreference="false" type="int"/>
+    <parameter name="limit" byreference="false" type="int"/>
+  </method>
+  <method name="createNewsQuery" start="347" end="352" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="Билдер для запросов к новостям."/>
+      <return type="object">
+        <type full="Illuminate\Database\Eloquent\Builder" namespace="Illuminate\Database\Eloquent" name="Builder"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Illuminate\Database\Eloquent\Builder" namespace="Illuminate\Database\Eloquent" name="Builder"/>
+    </return>
+  </method>
+  <parent full="App\Repository\BaseRepository" namespace="App\Repository" name="BaseRepository">
+    <implements full="App\Repository\EloquentRepositoryInterface" namespace="App\Repository" name="EloquentRepositoryInterface"/>
+    <member name="model" visibility="protected" static="false" line="15">
+      <docblock>
+        <description compact="Модель."/>
+      </docblock>
+    </member>
+    <constructor name="__construct" start="22" end="25" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Конструктор."/>
+        <param type="object" variable="$model">
+          <type full="Illuminate\Database\Eloquent\Model" namespace="Illuminate\Database\Eloquent" name="Model"/>
+        </param>
+      </docblock>
+      <parameter name="model" byreference="false" type="object">
+        <type full="Illuminate\Database\Eloquent\Model" namespace="Illuminate\Database\Eloquent" name="Model"/>
+      </parameter>
+    </constructor>
+    <method name="create" start="30" end="42" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="{@inheritDoc}"/>
+      </docblock>
+      <return type="object" nullable="false">
+        <type full="Illuminate\Database\Eloquent\Model" namespace="Illuminate\Database\Eloquent" name="Model"/>
+      </return>
+      <parameter name="attributes" byreference="false" type="array"/>
+    </method>
+    <method name="find" start="47" end="50" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="{@inheritDoc}"/>
+      </docblock>
+      <return type="object" nullable="true">
+        <type full="Illuminate\Database\Eloquent\Model" namespace="Illuminate\Database\Eloquent" name="Model"/>
+      </return>
+      <parameter name="id" byreference="false" type="string"/>
+    </method>
+  </parent>
+  <interface full="App\Repository\EloquentRepositoryInterface" namespace="App\Repository" name="EloquentRepositoryInterface">
+    <method name="create" start="21" end="21" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Создать объект."/>
+        <param type="array" variable="$attributes"/>
+        <return type="object">
+          <type full="Illuminate\Database\Eloquent\Model" namespace="Illuminate\Database\Eloquent" name="Model"/>
+        </return>
+      </docblock>
+      <return type="object" nullable="false">
+        <type full="Illuminate\Database\Eloquent\Model" namespace="Illuminate\Database\Eloquent" name="Model"/>
+      </return>
+      <parameter name="attributes" byreference="false" type="array"/>
+    </method>
+    <method name="find" start="29" end="29" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Поиск по ID"/>
+        <param type="string" variable="$id"/>
+        <return type="object">
+          <type full="Illuminate\Database\Eloquent\Model" namespace="Illuminate\Database\Eloquent" name="Model"/>
+        </return>
+      </docblock>
+      <return type="object" nullable="true">
+        <type full="Illuminate\Database\Eloquent\Model" namespace="Illuminate\Database\Eloquent" name="Model"/>
+      </return>
+      <parameter name="id" byreference="false" type="string"/>
+    </method>
+  </interface>
+</class>

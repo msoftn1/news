@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Providers\AppServiceProvider" namespace="App\Providers" name="AppServiceProvider" abstract="false" final="false" start="12" end="31">
+  <file path="/home/tatu/news/app/Providers" file="AppServiceProvider.php" realpath="/home/tatu/news/app/Providers/AppServiceProvider.php" size="716" time="2020-08-19T05:34:02+00:00" unixtime="1597815242" sha1="9b67f7eb7189f1d1c7847ac500cb8080ea0dc84a" relative="Providers/AppServiceProvider.php"/>
+  <extends full="Illuminate\Support\ServiceProvider" namespace="Illuminate\Support" name="ServiceProvider" unresolved="true"/>
+  <method name="register" start="19" end="22" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Register any application services."/>
+      <return type="object">
+        <type full="App\Providers\void" namespace="App\Providers" name="void"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="boot" start="24" end="30" abstract="false" final="false" static="false" visibility="public"/>
+</class>

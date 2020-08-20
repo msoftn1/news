@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\View\Components\Categories" namespace="App\View\Components" name="Categories" abstract="false" final="false" start="12" end="37">
+  <file path="/home/tatu/news/app/View/Components" file="Categories.php" realpath="/home/tatu/news/app/View/Components/Categories.php" size="801" time="2020-08-20T07:45:35+00:00" unixtime="1597909535" sha1="e4c76721721be2fba250bd3fe774222379faffe6" relative="View/Components/Categories.php"/>
+  <docblock>
+    <description compact="Компонент категорий."/>
+  </docblock>
+  <extends full="Illuminate\View\Component" namespace="Illuminate\View" name="Component" unresolved="true"/>
+  <member name="sourceRepository" visibility="private" static="false" line="15">
+    <docblock>
+      <description compact="Репозиторий источников."/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="21" end="24" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Конструктор."/>
+      <param type="object" variable="$sourceRepository">
+        <type full="App\Repository\SourceRepository" namespace="App\Repository" name="SourceRepository"/>
+      </param>
+    </docblock>
+    <parameter name="sourceRepository" byreference="false" type="object">
+      <type full="App\Repository\SourceRepository" namespace="App\Repository" name="SourceRepository"/>
+    </parameter>
+  </constructor>
+  <method name="render" start="31" end="36" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Рендеринг."/>
+      <return type="object">
+        <type full="Illuminate\View\View" namespace="Illuminate\View" name="View"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Illuminate\View\View" namespace="Illuminate\View" name="View"/>
+    </return>
+  </method>
+</class>

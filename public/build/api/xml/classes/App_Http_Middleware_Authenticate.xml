@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Http\Middleware\Authenticate" namespace="App\Http\Middleware" name="Authenticate" abstract="false" final="false" start="8" end="44">
+  <file path="/home/tatu/news/app/Http/Middleware" file="Authenticate.php" realpath="/home/tatu/news/app/Http/Middleware/Authenticate.php" size="903" time="2020-08-20T06:48:49+00:00" unixtime="1597906129" sha1="1b056f1d3e57b050e173f34a9f1ca2306a254834" relative="Http/Middleware/Authenticate.php"/>
+  <member name="auth" visibility="protected" static="false" line="15">
+    <docblock>
+      <description compact="The authentication guard factory instance."/>
+      <var type="object">
+        <type full="\Illuminate\Contracts\Auth\Factory" namespace="\Illuminate\Contracts\Auth" name="Factory"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="23" end="26" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Create a new middleware instance."/>
+      <param type="object" variable="$auth">
+        <type full="\Illuminate\Contracts\Auth\Factory" namespace="\Illuminate\Contracts\Auth" name="Factory"/>
+      </param>
+      <return type="object">
+        <type full="App\Http\Middleware\void" namespace="App\Http\Middleware" name="void"/>
+      </return>
+    </docblock>
+    <parameter name="auth" byreference="false" type="object">
+      <type full="Illuminate\Contracts\Auth\Factory" namespace="Illuminate\Contracts\Auth" name="Factory"/>
+    </parameter>
+  </constructor>
+  <method name="handle" start="36" end="43" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Handle an incoming request."/>
+      <param type="object" variable="$request">
+        <type full="\Illuminate\Http\Request" namespace="\Illuminate\Http" name="Request"/>
+      </param>
+      <param type="object" variable="$next">
+        <type full="\Closure" namespace="" name="Closure"/>
+      </param>
+      <param type="object" variable="$guard">
+        <type full="App\Http\Middleware\string|null" namespace="App\Http\Middleware" name="string|null"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <parameter name="next" byreference="false" type="object">
+      <type full="Closure" namespace="" name="Closure"/>
+    </parameter>
+    <parameter name="guard" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+</class>

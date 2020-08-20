@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Services\BreadcrumbsService" namespace="App\Services" name="BreadcrumbsService" abstract="false" final="false" start="14" end="25">
+  <file path="/home/tatu/news/app/Services" file="BreadcrumbsService.php" realpath="/home/tatu/news/app/Services/BreadcrumbsService.php" size="424" time="2020-08-20T07:35:59+00:00" unixtime="1597908959" sha1="61171eeda23e003778f4992cd437ad543d9ac41b" relative="Services/BreadcrumbsService.php"/>
+  <docblock>
+    <description compact="Сервис хлебных крошек."/>
+  </docblock>
+  <method name="getBuilder" start="21" end="24" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Объект строителя breadcrumbs."/>
+      <return type="object">
+        <type full="App\Breadcrumbs\BreadcrumbsBuilder" namespace="App\Breadcrumbs" name="BreadcrumbsBuilder"/>
+      </return>
+    </docblock>
+  </method>
+</class>

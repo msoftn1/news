@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\User" namespace="App" name="User" abstract="false" final="false" start="15" end="36">
+  <file path="/home/tatu/news/app" file="User.php" realpath="/home/tatu/news/app/User.php" size="816" time="2020-08-20T07:50:33+00:00" unixtime="1597909833" sha1="0a44a1fdf89c283fa3e025d70068ab140e44bddf" relative="User.php"/>
+  <docblock>
+    <description compact="Пользователи."/>
+  </docblock>
+  <extends full="Illuminate\Database\Eloquent\Model" namespace="Illuminate\Database\Eloquent" name="Model" unresolved="true"/>
+  <implements full="Illuminate\Contracts\Auth\Authenticatable" namespace="Illuminate\Contracts\Auth" name="Authenticatable" unresolved="true"/>
+  <implements full="Illuminate\Contracts\Auth\Access\Authorizable" namespace="Illuminate\Contracts\Auth\Access" name="Authorizable" unresolved="true"/>
+  <uses full="Rennokki\QueryCache\Traits\QueryCacheable" namespace="Rennokki\QueryCache\Traits" name="QueryCacheable" start="17" end="17" unresolved="true"/>
+  <uses full="Illuminate\Auth\Authenticatable" namespace="Illuminate\Auth" name="Authenticatable" start="17" end="17" unresolved="true"/>
+  <uses full="Laravel\Lumen\Auth\Authorizable" namespace="Laravel\Lumen\Auth" name="Authorizable" start="17" end="17" unresolved="true"/>
+  <member name="fillable" default="" type="array" visibility="protected" static="false" line="24">
+    <docblock>
+      <description compact="The attributes that are mass assignable."/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="hidden" default="" type="array" visibility="protected" static="false" line="33">
+    <docblock>
+      <description compact="The attributes excluded from the model's JSON form."/>
+      <var type="array"/>
+    </docblock>
+  </member>
+</class>

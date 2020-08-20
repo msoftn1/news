@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Libraries\NewsApi\Client" namespace="App\Libraries\NewsApi" name="Client" abstract="false" final="false" start="14" end="106">
+  <file path="/home/tatu/news/app/Libraries/NewsApi" file="Client.php" realpath="/home/tatu/news/app/Libraries/NewsApi/Client.php" size="2408" time="2020-08-20T07:13:56+00:00" unixtime="1597907636" sha1="3b76e957ef1fb40ec21422d8d622220eb140792a" relative="Libraries/NewsApi/Client.php"/>
+  <docblock>
+    <description compact="Клиент новостей."/>
+  </docblock>
+  <member name="baseUri" default="'https://newsapi.org/v2/'" type="string" visibility="private" static="false" line="17">
+    <docblock>
+      <description compact="Базовый URI"/>
+    </docblock>
+  </member>
+  <member name="client" visibility="private" static="false" line="20">
+    <docblock>
+      <description compact="HTTP клиент."/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="25" end="28" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Конструктор."/>
+    </docblock>
+  </constructor>
+  <method name="getSources" start="36" end="39" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Получить источники."/>
+      <return type="object">
+        <type full="\StdClass" namespace="" name="StdClass"/>
+      </return>
+      <throws type="object">
+        <type full="App\Libraries\NewsApi\Exceptions\NewsApiException" namespace="App\Libraries\NewsApi\Exceptions" name="NewsApiException"/>
+      </throws>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="StdClass" namespace="" name="StdClass"/>
+    </return>
+  </method>
+  <method name="getNews" start="48" end="51" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Получить новости."/>
+      <param type="string" variable="$source"/>
+      <return type="object">
+        <type full="\StdClass" namespace="" name="StdClass"/>
+      </return>
+      <throws type="object">
+        <type full="App\Libraries\NewsApi\Exceptions\NewsApiException" namespace="App\Libraries\NewsApi\Exceptions" name="NewsApiException"/>
+      </throws>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="StdClass" namespace="" name="StdClass"/>
+    </return>
+    <parameter name="source" byreference="false" type="string"/>
+  </method>
+  <method name="load" start="61" end="70" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="Загрузка данных."/>
+      <param type="string" variable="$method"/>
+      <param type="array" variable="$params"/>
+      <return type="object">
+        <type full="\StdClass" namespace="" name="StdClass"/>
+      </return>
+      <throws type="object">
+        <type full="App\Libraries\NewsApi\NewsApiException|GuzzleException" namespace="App\Libraries\NewsApi" name="NewsApiException|GuzzleException"/>
+      </throws>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="StdClass" namespace="" name="StdClass"/>
+    </return>
+    <parameter name="method" byreference="false" type="string"/>
+    <parameter name="params" byreference="false" type="array" default=""/>
+  </method>
+  <method name="tryRequest" start="80" end="105" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="Выполнить запрос."/>
+      <param type="string" variable="$uri"/>
+      <param type="array" variable="$params"/>
+      <return type="object">
+        <type full="App\Libraries\NewsApi\array|null" namespace="App\Libraries\NewsApi" name="array|null"/>
+      </return>
+      <throws type="object">
+        <type full="GuzzleHttp\Exception\GuzzleException" namespace="GuzzleHttp\Exception" name="GuzzleException"/>
+      </throws>
+    </docblock>
+    <return type="array" nullable="true"/>
+    <parameter name="uri" byreference="false" type="string"/>
+    <parameter name="params" byreference="false" type="array"/>
+  </method>
+</class>

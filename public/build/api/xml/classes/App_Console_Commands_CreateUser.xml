@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Console\Commands\CreateUser" namespace="App\Console\Commands" name="CreateUser" abstract="false" final="false" start="14" end="88">
+  <file path="/home/tatu/news/app/Console/Commands" file="CreateUser.php" realpath="/home/tatu/news/app/Console/Commands/CreateUser.php" size="2058" time="2020-08-20T06:52:12+00:00" unixtime="1597906332" sha1="6669a17357d0fd307538ae0d3b5bac8c629393c0" relative="Console/Commands/CreateUser.php"/>
+  <docblock>
+    <description compact="Команда создает пользователя."/>
+  </docblock>
+  <extends full="Illuminate\Console\Command" namespace="Illuminate\Console" name="Command" unresolved="true"/>
+  <member name="signature" default="'user:create {name} {email} {password}'" type="string" visibility="protected" static="false" line="19">
+    <docblock>
+      <description compact="{@inheritdoc}"/>
+    </docblock>
+  </member>
+  <member name="description" default="'Create User'" type="string" visibility="protected" static="false" line="24">
+    <docblock>
+      <description compact="{@inheritdoc}"/>
+    </docblock>
+  </member>
+  <member name="userRepository" visibility="private" static="false" line="27">
+    <docblock>
+      <description compact="Репозиторий пользователей."/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="34" end="39" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Конструктор."/>
+      <param type="object" variable="$userRepository">
+        <type full="App\Repository\UserRepository" namespace="App\Repository" name="UserRepository"/>
+      </param>
+    </docblock>
+    <parameter name="userRepository" byreference="false" type="object">
+      <type full="App\Repository\UserRepository" namespace="App\Repository" name="UserRepository"/>
+    </parameter>
+  </constructor>
+  <method name="handle" start="44" end="56" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Обработчик команды."/>
+    </docblock>
+    <return type="void" nullable="false"/>
+  </method>
+  <method name="checkUser" start="63" end="66" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="Проверить существование пользователя."/>
+      <return type="object">
+        <type full="App\Console\Commands\bool" namespace="App\Console\Commands" name="bool"/>
+      </return>
+    </docblock>
+    <return type="bool" nullable="false"/>
+  </method>
+  <method name="createUser" start="74" end="86" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="Создать пользователя."/>
+      <param type="string" variable="$token"/>
+      <return type="object">
+        <type full="App\User" namespace="App" name="User"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="App\User" namespace="App" name="User"/>
+    </return>
+    <parameter name="token" byreference="false" type="string"/>
+  </method>
+</class>

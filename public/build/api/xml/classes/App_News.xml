@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\News" namespace="App" name="News" abstract="false" final="false" start="13" end="45">
+  <file path="/home/tatu/news/app" file="News.php" realpath="/home/tatu/news/app/News.php" size="783" time="2020-08-20T07:50:33+00:00" unixtime="1597909833" sha1="47db487e8512c010b2effcf43fc968f4d85c483b" relative="News.php"/>
+  <docblock>
+    <description compact="Новости."/>
+  </docblock>
+  <extends full="Illuminate\Database\Eloquent\Model" namespace="Illuminate\Database\Eloquent" name="Model" unresolved="true"/>
+  <uses full="Rennokki\QueryCache\Traits\QueryCacheable" namespace="Rennokki\QueryCache\Traits" name="QueryCacheable" start="15" end="15" unresolved="true"/>
+  <member name="table" default="'news'" type="string" visibility="protected" static="false" line="17"/>
+  <method name="getImageId" start="24" end="34" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Получить ID картинки."/>
+      <return type="object">
+        <type full="App\string|null" namespace="App" name="string|null"/>
+      </return>
+    </docblock>
+    <return type="string" nullable="true"/>
+  </method>
+  <method name="source" start="41" end="44" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Получить источник."/>
+      <return type="object">
+        <type full="App\Source" namespace="App" name="Source"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="App\Source" namespace="App" name="Source"/>
+    </return>
+  </method>
+</class>

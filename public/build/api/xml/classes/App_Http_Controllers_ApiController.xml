@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Http\Controllers\ApiController" namespace="App\Http\Controllers" name="ApiController" abstract="false" final="false" start="15" end="145">
+  <file path="/home/tatu/news/app/Http/Controllers" file="ApiController.php" realpath="/home/tatu/news/app/Http/Controllers/ApiController.php" size="4301" time="2020-08-20T07:04:37+00:00" unixtime="1597907077" sha1="5612910ee6117d1efc93bed18aecb6cf9ed73883" relative="Http/Controllers/ApiController.php"/>
+  <docblock>
+    <description compact="Контроллер API."/>
+  </docblock>
+  <extends full="App\Http\Controllers\Controller" namespace="App\Http\Controllers" name="Controller"/>
+  <member name="sourceRepository" visibility="private" static="false" line="18">
+    <docblock>
+      <description compact="Репозиторий источников новостей."/>
+    </docblock>
+  </member>
+  <member name="newsRepository" visibility="private" static="false" line="21">
+    <docblock>
+      <description compact="Репозиторий новостей."/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="29" end="33" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Конструктор."/>
+      <param type="object" variable="$sourceRepository">
+        <type full="App\Repository\SourceRepository" namespace="App\Repository" name="SourceRepository"/>
+      </param>
+      <param type="object" variable="$newsRepository">
+        <type full="App\Repository\NewsRepository" namespace="App\Repository" name="NewsRepository"/>
+      </param>
+    </docblock>
+    <parameter name="sourceRepository" byreference="false" type="object">
+      <type full="App\Repository\SourceRepository" namespace="App\Repository" name="SourceRepository"/>
+    </parameter>
+    <parameter name="newsRepository" byreference="false" type="object">
+      <type full="App\Repository\NewsRepository" namespace="App\Repository" name="NewsRepository"/>
+    </parameter>
+  </constructor>
+  <method name="sources" start="40" end="50" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Источники."/>
+      <return type="object">
+        <type full="Illuminate\Http\Response" namespace="Illuminate\Http" name="Response"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Illuminate\Http\Response" namespace="Illuminate\Http" name="Response"/>
+    </return>
+  </method>
+  <method name="newsBySource" start="58" end="65" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Новости по источнику."/>
+      <param type="object" variable="$request">
+        <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+      </param>
+      <return type="object">
+        <type full="Illuminate\Http\Response" namespace="Illuminate\Http" name="Response"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Illuminate\Http\Response" namespace="Illuminate\Http" name="Response"/>
+    </return>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="newsByLanguage" start="73" end="80" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Новости по языку."/>
+      <param type="object" variable="$request">
+        <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+      </param>
+      <return type="object">
+        <type full="Illuminate\Http\Response" namespace="Illuminate\Http" name="Response"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Illuminate\Http\Response" namespace="Illuminate\Http" name="Response"/>
+    </return>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="newsByCategory" start="88" end="95" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Новости по категории."/>
+      <param type="object" variable="$request">
+        <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+      </param>
+      <return type="object">
+        <type full="Illuminate\Http\Response" namespace="Illuminate\Http" name="Response"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Illuminate\Http\Response" namespace="Illuminate\Http" name="Response"/>
+    </return>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="newsByCountry" start="103" end="110" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Новости по стране."/>
+      <param type="object" variable="$request">
+        <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+      </param>
+      <return type="object">
+        <type full="Illuminate\Http\Response" namespace="Illuminate\Http" name="Response"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Illuminate\Http\Response" namespace="Illuminate\Http" name="Response"/>
+    </return>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="newsSearch" start="118" end="125" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Поиск новостей."/>
+      <param type="object" variable="$request">
+        <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+      </param>
+      <return type="object">
+        <type full="Illuminate\Http\Response" namespace="Illuminate\Http" name="Response"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Illuminate\Http\Response" namespace="Illuminate\Http" name="Response"/>
+    </return>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="getPaginate" start="133" end="144" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="Пагинация."/>
+      <param type="object" variable="$request">
+        <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+      </param>
+      <return type="array"/>
+    </docblock>
+    <return type="array" nullable="false"/>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <parent full="App\Http\Controllers\Controller" namespace="App\Http\Controllers" name="Controller">
+    <extends full="Laravel\Lumen\Routing\Controller" namespace="Laravel\Lumen\Routing" name="Controller" unresolved="true"/>
+    <method name="jsonResponse" start="20" end="24" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Ответ в виде json."/>
+        <param type="array" variable="$data"/>
+        <return type="object">
+          <type full="Illuminate\Http\Response" namespace="Illuminate\Http" name="Response"/>
+        </return>
+      </docblock>
+      <return type="object" nullable="false">
+        <type full="Illuminate\Http\Response" namespace="Illuminate\Http" name="Response"/>
+      </return>
+      <parameter name="data" byreference="false" type="array"/>
+    </method>
+    <method name="jsonResponseWithPaginate" start="35" end="48" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Ответ в виде json с пагинацией."/>
+        <param type="object" variable="$data">
+          <type full="Illuminate\Support\Collection" namespace="Illuminate\Support" name="Collection"/>
+        </param>
+        <param type="int" variable="$totalCount"/>
+        <param type="int" variable="$page"/>
+        <param type="int" variable="$limit"/>
+        <return type="object">
+          <type full="Illuminate\Http\Response" namespace="Illuminate\Http" name="Response"/>
+        </return>
+      </docblock>
+      <return type="object" nullable="false">
+        <type full="Illuminate\Http\Response" namespace="Illuminate\Http" name="Response"/>
+      </return>
+      <parameter name="data" byreference="false" type="object">
+        <type full="Illuminate\Support\Collection" namespace="Illuminate\Support" name="Collection"/>
+      </parameter>
+      <parameter name="totalCount" byreference="false" type="int"/>
+      <parameter name="page" byreference="false" type="int"/>
+      <parameter name="limit" byreference="false" type="int"/>
+    </method>
+  </parent>
+</class>

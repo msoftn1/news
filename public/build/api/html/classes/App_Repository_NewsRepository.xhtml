@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - App\Repository\NewsRepository</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#App_Repository">App\Repository</a>
+          </li>
+          <li class="separator">NewsRepository</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/Repository/NewsRepository.php.xhtml#line15">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>App\Repository\</small>NewsRepository</h1>
+        <h4>Репозиторий новостей.</h4>
+        <p/>
+        <ul/>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class NewsRepository
+                extends <a title="App\Repository\BaseRepository" href="../classes/App_Repository_BaseRepository.xhtml">BaseRepository</a>
+            {<br/><ul class="none"><li>// Inherited members from <span title="App\Repository\BaseRepository">BaseRepository</span></li><li>protected  <a href="#members">$model</a>;
+                        </li></ul><ul class="none"><li>// methods</li><li>public void <a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/__construct.xhtml">__construct</a>()
+                    </li><li>public bool <a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/existsByAuthorAndPublishedAt.xhtml">existsByAuthorAndPublishedAt</a>()
+                    </li><li>public <span title="LengthAwarePaginator">LengthAwarePaginator</span> <a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/getTopNews.xhtml">getTopNews</a>()
+                    </li><li>public <span title="LengthAwarePaginator">LengthAwarePaginator</span> <a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/findBySource.xhtml">findBySource</a>()
+                    </li><li>public array <a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/findBySourceApi.xhtml">findBySourceApi</a>()
+                    </li><li>public <span title="LengthAwarePaginator">LengthAwarePaginator</span> <a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/getAuthors.xhtml">getAuthors</a>()
+                    </li><li>public <span title="LengthAwarePaginator">LengthAwarePaginator</span> <a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/findNewsByAuthor.xhtml">findNewsByAuthor</a>()
+                    </li><li>public <span title="LengthAwarePaginator">LengthAwarePaginator</span> <a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/findNewsByPublishedAt.xhtml">findNewsByPublishedAt</a>()
+                    </li><li>public <span title="LengthAwarePaginator">LengthAwarePaginator</span> <a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/findByLanguage.xhtml">findByLanguage</a>()
+                    </li><li>public array <a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/findByLanguageApi.xhtml">findByLanguageApi</a>()
+                    </li><li>public <span title="LengthAwarePaginator">LengthAwarePaginator</span> <a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/findByCategory.xhtml">findByCategory</a>()
+                    </li><li>public array <a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/findByCategoryApi.xhtml">findByCategoryApi</a>()
+                    </li><li>public <span title="LengthAwarePaginator">LengthAwarePaginator</span> <a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/findByCountryApi.xhtml">findByCountryApi</a>()
+                    </li><li>protected <span title="Builder">Builder</span> <a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/searchNewsQuery.xhtml">searchNewsQuery</a>()
+                    </li><li>public <span title="Collection">Collection</span> <a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/searchNews.xhtml">searchNews</a>()
+                    </li><li>public array <a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/searchNewsApi.xhtml">searchNewsApi</a>()
+                    </li><li>public <span title="LengthAwarePaginator">LengthAwarePaginator</span> <a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/searchNewsPaginate.xhtml">searchNewsPaginate</a>()
+                    </li><li>public <span title="Collection">Collection</span> <a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/getArchives.xhtml">getArchives</a>()
+                    </li><li>private array <a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/api.xhtml">api</a>()
+                    </li><li>private <span title="Builder">Builder</span> <a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/createNewsQuery.xhtml">createNewsQuery</a>()
+                    </li></ul><ul class="none"><li>// Inherited methods from <span title="App\Repository\BaseRepository">BaseRepository</span></li><li>public void <a title="App\Repository\BaseRepository" href="../classes/App_Repository_BaseRepository/__construct.xhtml">__construct</a>()
+                        </li><li>public void <a title="App\Repository\BaseRepository" href="../classes/App_Repository_BaseRepository/create.xhtml">create</a>()
+                        </li><li>public void <a title="App\Repository\BaseRepository" href="../classes/App_Repository_BaseRepository/find.xhtml">find</a>()
+                        </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Extends</h4>
+          <ul>
+            <li>
+              <a title="App\Repository\BaseRepository" href="../classes/App_Repository_BaseRepository.xhtml">App\Repository\BaseRepository</a>
+            </li>
+          </ul>
+        </div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>protected</h4>
+          <ul class="members">
+            <li id="model">
+              <strong>$model</strong>
+              <br/>
+              <span class="indent">Модель.</span>
+            </li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>private</h4>
+          <ul>
+            <li id="api"><a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/api.xhtml">api()</a>
+                — Выполнить запрос для API.</li>
+            <li id="createNewsQuery"><a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/createNewsQuery.xhtml">createNewsQuery()</a>
+                — Билдер для запросов к новостям.</li>
+          </ul>
+          <h4>protected</h4>
+          <ul>
+            <li id="searchNewsQuery"><a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/searchNewsQuery.xhtml">searchNewsQuery()</a>
+                — Билдер для поиска новостей.</li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/__construct.xhtml">__construct()</a>
+                — Конструктор.</li>
+            <li id="existsByAuthorAndPublishedAt"><a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/existsByAuthorAndPublishedAt.xhtml">existsByAuthorAndPublishedAt()</a>
+                — Проверитб наличие новости по автору и дате публикации.</li>
+            <li id="findByCategory"><a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/findByCategory.xhtml">findByCategory()</a>
+                — Новости по категории.</li>
+            <li id="findByCategoryApi"><a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/findByCategoryApi.xhtml">findByCategoryApi()</a>
+                — Новости по категории для API.</li>
+            <li id="findByCountryApi"><a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/findByCountryApi.xhtml">findByCountryApi()</a>
+                — Новости по стране для API.</li>
+            <li id="findByLanguage"><a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/findByLanguage.xhtml">findByLanguage()</a>
+                — Новости по языку.</li>
+            <li id="findByLanguageApi"><a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/findByLanguageApi.xhtml">findByLanguageApi()</a>
+                — Новости по языку для API.</li>
+            <li id="findBySource"><a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/findBySource.xhtml">findBySource()</a>
+                — Поиск по источнику.</li>
+            <li id="findBySourceApi"><a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/findBySourceApi.xhtml">findBySourceApi()</a>
+                — Поиск по источнику в формате для API.</li>
+            <li id="findNewsByAuthor"><a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/findNewsByAuthor.xhtml">findNewsByAuthor()</a>
+                — Новости по автору.</li>
+            <li id="findNewsByPublishedAt"><a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/findNewsByPublishedAt.xhtml">findNewsByPublishedAt()</a>
+                — Новости по датам публикации.</li>
+            <li id="getArchives"><a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/getArchives.xhtml">getArchives()</a>
+                — Получить даты архивов новостей.</li>
+            <li id="getAuthors"><a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/getAuthors.xhtml">getAuthors()</a>
+                — Авторы.</li>
+            <li id="getTopNews"><a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/getTopNews.xhtml">getTopNews()</a>
+                — Получить топовые новости.</li>
+            <li id="searchNews"><a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/searchNews.xhtml">searchNews()</a>
+                — Поиск новостей.</li>
+            <li id="searchNewsApi"><a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/searchNewsApi.xhtml">searchNewsApi()</a>
+                — Поиск новостей для API.</li>
+            <li id="searchNewsPaginate"><a title="App\Repository\NewsRepository" href="../classes/App_Repository_NewsRepository/searchNewsPaginate.xhtml">searchNewsPaginate()</a>
+                — Поиск новостей пагинация.</li>
+          </ul>
+          <h3>Inherited from <a title="App\Repository\BaseRepository" href="../classes/App_Repository_BaseRepository.xhtml">App\Repository\BaseRepository</a></h3>
+          <h4>public</h4>
+          <ul>
+            <li id="create"><a title="App\Repository\BaseRepository" href="../classes/App_Repository_BaseRepository/create.xhtml">create()</a>
+                — {@inheritDoc}</li>
+            <li id="find"><a title="App\Repository\BaseRepository" href="../classes/App_Repository_BaseRepository/find.xhtml">find()</a>
+                — {@inheritDoc}</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0 - Copyright (C) 2010 - 2020 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

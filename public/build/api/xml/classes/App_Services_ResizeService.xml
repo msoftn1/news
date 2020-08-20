@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Services\ResizeService" namespace="App\Services" name="ResizeService" abstract="false" final="false" start="12" end="33">
+  <file path="/home/tatu/news/app/Services" file="ResizeService.php" realpath="/home/tatu/news/app/Services/ResizeService.php" size="674" time="2020-08-20T07:38:38+00:00" unixtime="1597909118" sha1="856a6f64229f822c79829a8f2146f47846c70e2b" relative="Services/ResizeService.php"/>
+  <docblock>
+    <description compact="Сервис ресайза."/>
+  </docblock>
+  <method name="resize" start="20" end="32" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Ресайз."/>
+      <param type="string" variable="$fileName"/>
+      <return type="string"/>
+    </docblock>
+    <return type="string" nullable="false"/>
+    <parameter name="fileName" byreference="false" type="string"/>
+  </method>
+</class>
